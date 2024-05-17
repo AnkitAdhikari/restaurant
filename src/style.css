@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "alice";
+  src: url("./fonts/alice-regular-webfont.woff2") format("woff2"),
+    url("./fonts/alice-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "quattrocento";
+  src: url("./fonts/quattrocento-regular-webfont.woff2") format("woff2"),
+    url("./fonts/quattrocento-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "quattrocento";
+  src: url("./fonts/quattrocento-bold-webfont.woff2") format("woff2"),
+    url("./fonts/quattrocento-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-family: "alice";
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("./images/bg.jpg");
+  background-size: cover;
+}
+
+nav {
+  margin: 5rem auto;
+}
+
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  font-family: inherit;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: orange;
+}
+
+button.active {
+  color: orange;
+}
+
+.cta {
+  background-color: orange;
+}
+
+.cta:hover {
+  color: black;
+}
+
+#content {
+  max-width: 120rem;
+  margin: auto auto;
+}
+
+.header {
+  margin-top: 15rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.brand-name {
+  font-size: 6.2rem;
+}
+
+.brand-content {
+  line-height: 1.2;
+  margin: 0 auto;
+  width: 50%;
+  font-size: 2.2rem;
+}
