@@ -1,7 +1,7 @@
 import "./style.css"
 import home from "./home.js";
 import menu from "./menu.js"
-import contact from "./contact.js"
+import about from "./about.js"
 
 const nav = document.querySelector('nav');
 const contentContainer = document.querySelector('#content');
@@ -18,7 +18,7 @@ nav.addEventListener('click', (e) => {
         menu(contentContainer);
     } else if (e.target.classList.contains('about-btn')) {
         e.target.classList.toggle('active');
-        contact(contentContainer);
+        about(contentContainer);
     }
 });
 

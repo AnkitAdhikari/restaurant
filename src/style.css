@@ -72,6 +72,12 @@ button.active {
   color: orange;
 }
 
+.page-heading {
+  text-align: center;
+  color: white;
+  font-size: 2.2rem;
+}
+
 .cta {
   background-color: orange;
 }
@@ -196,4 +202,15 @@ button.active {
 
 img {
   width: 100%;
+}
+
+.contact-container {
+  border: 1px solid white;
+  padding: 4rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 2rem;
+  line-height: 1.4;
+  align-items: center;
 }
