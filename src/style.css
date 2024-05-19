@@ -104,3 +104,95 @@ button.active {
   width: 50%;
   font-size: 2.2rem;
 }
+
+.menu-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+
+.menu-heading-container h1 {
+  color: white;
+  font-size: 4.2rem;
+}
+
+.menu-heading-container div {
+  height: 0.1rem;
+  background-color: orange;
+  flex-grow: 1;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 2rem;
+  color: white;
+  margin-bottom: 7rem;
+}
+
+.dish-name {
+  font-size: 2.6rem;
+}
+
+.dish-ingredients {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .content {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu {
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(255, 166, 0, 0.5);
+}
+
+.menu:hover {
+  box-shadow: 0 0 0 1.5px orange;
+}
+
+.menu::after {
+  content: "order";
+  position: absolute;
+  bottom: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.4s;
+  background-color: black;
+  padding: 1rem;
+  color: orange;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.menu:hover::after {
+  opacity: 1;
+  bottom: 60%;
+  cursor: pointer;
+}
+
+.dish-weight {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+}

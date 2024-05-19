@@ -7,14 +7,17 @@ module.exports = {
     devServer: {
         static: './dist',
     },
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        menu: './src/menu.js'
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
     ],
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
@@ -23,6 +26,10 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|webp|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
         ],
     },
